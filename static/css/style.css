@@ -1,0 +1,233 @@
+body{
+    background-color: #14171A;
+    color: white ;
+}
+
+/* index Page */
+#container{
+    margin-top: 10px;
+   
+    background-color:#1DA1F2;
+    margin-left: 350px;
+    margin-right: 350px;
+    height: 650px;
+    position: absolute;
+}
+#headder{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 10px;
+}
+#indexlink{
+    margin-top: 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.link{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#create-acc-link{
+    text-decoration: none;
+    text-align: center;
+    color: #14171A;
+    padding: 8px;
+    background-color: white;
+    margin: 10px 10px 0 10px;
+    border-radius: 20px;
+    width: 50%;
+    border: 1px solid  #555555;
+    
+    
+    }
+    #loginlink{
+        text-decoration: none;
+        text-align: center;
+        color: #14171A;
+        }
+
+    #loginlink:hover{
+    background-color: #1DA1F2;
+    color: white;
+    }
+
+    #create-acc-link:hover{
+        background-color: #AAB8C2;
+        color: white;
+        }
+
+/* createUser Page and login Page */
+#container2{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #1DA1F2;
+    background-color:white;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+    border-style: none;
+    border-bottom: 1px solid;
+
+}
+input:focus{
+    outline: none;
+ }
+
+button:focus{
+    outline:none;
+}
+button{
+    background-color:#1DA1F2;
+    color: white;
+    width: 100%;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: white;
+    border: 1px solid ;
+    color: #1DA1F2;
+}
+
+
+/*users page */
+#container3{
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:white;
+    color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#headder{
+    
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 10px;
+}
+#indexlink{
+    margin-top: 20px;
+    padding: 0 0 0 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.link{
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#create-acc-link{
+    text-decoration: none;
+    text-align: center;
+    color: #14171A;
+    padding: 8px;
+    background-color: white;
+    margin: 10px 10px 0 10px;
+    border-radius: 20px;
+    width: 50%;
+    border: 1px solid  #555555;
+    
+    
+    }
+    #loginlink{
+        text-decoration: none;
+        text-align: center;
+        color: #14171A;
+        }
+
+    #loginlink:hover{
+    background-color: #1DA1F2;
+    color: white;
+    }
+
+    #create-acc-link:hover{
+        background-color: #AAB8C2;
+        color: white;
+    }
+
+    #logout{
+        text-decoration: none;
+        text-align: center;
+        color: #14171A;
+        padding: 8px;
+        background-color: white;
+        border: 1px solid  #555555;
+        border-radius: 15px;
+
+    }
+    #tweet{
+        text-decoration: none;
+        text-align: center;
+        color: #14171A;
+        padding: 8px;
+        background-color: white;
+        border: 1px solid  #555555;
+        border-radius: 20px;
+
+    }
+    #tweet:hover{
+        background-color: #AAB8C2;
+        color: white;
+    }
+    #logout:hover{
+        background-color: #AAB8C2;
+        color: white;
+    }
+
+    #logout{
+        text-decoration: none;
+        text-align: center;
+        color: #14171A;
+        padding: 8px;
+        background-color: white;
+        border: 1px solid  #555555;
+        border-radius: 15px;
+
+    }
+    #twitBtn{
+        
+        background-color:#1DA1F2;
+        color: white;
+        width: 80px;
+        border-style: none;
+        border: 1px solid white;
+        border-radius: 20px;
+    }
+   
+    #tweetinput{
+        border: 1px solid;
+        height: 70px;
+        width: 40%;
+
+    
+    }
+    #tweetinput:focus{
+        outline: none;
+     }
+     #twitBtn:focus{
+        outline: none;
+     }
+     #twitBtn:hover{
+        background-color: white;
+        color: #1DA1F2;
+        border: 2px solid black;
+     }

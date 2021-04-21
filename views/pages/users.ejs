@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "container3">
+        <div id ="headder">
+            <img id ="logoimg"src="/imgs/logo.png" width="100" height="100" alt="Logo">
+       </div>
+       <h4 style="text-align: center;">Tweet</h4>
+
+ <a id= "tweet" href="/logout">Logout</a> <br><br> </h6>
+<hr>
+     <p>Hi <b><%= data=user %></b> Welcome to your profile!</p>
+ 
+
+    <form action="/createTweet" method="POST">
+        <textarea id="tweetinput" type="text" name="content" placeholder="What's on your mind? Tweet here......"></textarea><br><br>
+        
+        <button id ="twitBtn" type="submit">tweet</button>
+    </form>
+
+    <br><br>
+    <hr>
+    <h3 style="text-align: center;">Tweets Feed</h3>
+    <hr style="margin-left: 100px; margin-right: 100px;">
+       <% for (let tweet of locals.tweets.reverse()) { %>
+            <div class="tweet">
+                <h3 style ="color: #1DA1F2; font-size: 20px;"><b><%=tweet.dataValues.username%></b></h3>
+                  <%= tweet.dataValues.content %><br><br>
+
+                <p style="font-size: 10px;">Tweeted on <%= tweet.dataValues.timeCreated%></p><hr><br>
+
+            </div>
+        <% } %>
+        <p>End of Tweets</p>
+        <a id= "logout" href="/logout">Logout</a>
+        <br><br>
+    </div>
+</body>
+</html>
